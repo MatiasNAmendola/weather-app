@@ -1,8 +1,11 @@
 import React from 'react';
 
 // functional component
-const WeatherExtraInfo = () => (
-    <div>Weather Extra Info</div>
+const WeatherExtraInfo = ({ humidity, wind }) => (
+    <div>
+        <span>{`${humidity} % - `}</span>
+        <span>{`${wind} wind`}</span>
+    </div>
 );
 
 export default WeatherExtraInfo;
